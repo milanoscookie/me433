@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/milan/me433/blink
+CMAKE_SOURCE_DIR = /home/milan/me433/hw4
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/milan/me433/build
@@ -91,6 +91,6 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend:
-	cd /home/milan/me433/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/milan/me433/blink /home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/boot_stage2 /home/milan/me433/build /home/milan/me433/build/pico-sdk/src/rp2_common/boot_stage2 /home/milan/me433/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/milan/me433/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/milan/me433/hw4 /home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/boot_stage2 /home/milan/me433/build /home/milan/me433/build/pico-sdk/src/rp2_common/boot_stage2 /home/milan/me433/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 

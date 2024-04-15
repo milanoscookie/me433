@@ -110,14 +110,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/milan/.pico-sdk/sdk/1.5.1/tools/CMakeLists.txt"
   "/home/milan/.pico-sdk/sdk/1.5.1/tools/FindELF2UF2.cmake"
   "/home/milan/.pico-sdk/sdk/1.5.1/tools/FindPioasm.cmake"
-  "/home/milan/me433/blink/CMakeLists.txt"
-  "/home/milan/me433/blink/pico_sdk_import.cmake"
   "CMakeFiles/3.22.1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-cfgcmd.txt.in"
+  "/home/milan/me433/hw4/CMakeLists.txt"
+  "/home/milan/me433/hw4/pico_sdk_import.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeASMInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -238,7 +238,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/blink.dir/DependInfo.cmake"
+  "CMakeFiles/hw4.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"

@@ -1,4 +1,4 @@
-# Install script for directory: /home/milan/me433/blink
+# Install script for directory: /home/milan/me433/hw4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

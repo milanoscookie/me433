@@ -1,4 +1,4 @@
-/home/milan/me433/build/CMakeFiles/blink.dir
+/home/milan/me433/build/CMakeFiles/hw4.dir
 /home/milan/me433/build/CMakeFiles/ELF2UF2Build.dir
 /home/milan/me433/build/CMakeFiles/edit_cache.dir
 /home/milan/me433/build/CMakeFiles/rebuild_cache.dir
