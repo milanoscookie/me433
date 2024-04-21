@@ -11,6 +11,7 @@
 #define REG_GPIO _u(0x09)
 #define REG_OLAT _u(0x0A)
 
+
 void setup() {
     uint8_t buf[2];
 
@@ -30,20 +31,17 @@ void led(bool bit) {
 int read() {
     uint8_t buf[1];
     uint8_t reg = REG_GPIO;
+
     i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);  // true to keep master control of bus
     i2c_read_blocking(i2c_default, ADDR, buf, 1, false);  // false - finished with bus
 
-    if (buf[0]&0b1 == 0b1) {
-        return 1;
-    }
-    else {
-        return 0;
-    }
+    return (int) (buf[0]&0b1 == 0b1);
 }
 
 int main() {
     stdio_init_all();
 
+    gpio_init(PICO_DEFAULT_LED_PIN);
     i2c_init(i2c_default, 100 * 1000);
 
     gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
@@ -54,9 +52,9 @@ int main() {
 
     setup();
 
-    int r  = read();
-    printf("%f", r);
     while (1) {
+        int r  = read();
+        printf("%d\n", r);
         led(!r);
     }
 }

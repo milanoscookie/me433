@@ -88,6 +88,7 @@ Discarded input sections
  .bss           0x00000000        0x0 CMakeFiles/hw5.dir/hw5.c.obj
  .text.setup    0x00000000       0x24 CMakeFiles/hw5.dir/hw5.c.obj
  .text.led      0x00000000       0x28 CMakeFiles/hw5.dir/hw5.c.obj
+ .text.read     0x00000000       0x3c CMakeFiles/hw5.dir/hw5.c.obj
  .text          0x00000000        0x0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -155,8 +156,6 @@ Discarded input sections
                 0x00000000       0x7c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_input_enabled
                 0x00000000       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_init
-                0x00000000       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_deinit
                 0x00000000       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_init_mask
@@ -1201,9 +1200,9 @@ Discarded input sections
                 0x00000000       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
  .data.i2c1_inst
                 0x00000000        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
- .text          0x00000000        0x0 /tmp/ccwNITkB.o
- .data          0x00000000        0x0 /tmp/ccwNITkB.o
- .bss           0x00000000        0x0 /tmp/ccwNITkB.o
+ .text          0x00000000        0x0 /tmp/cc9NEiUi.o
+ .data          0x00000000        0x0 /tmp/cc9NEiUi.o
+ .bss           0x00000000        0x0 /tmp/cc9NEiUi.o
  .data          0x00000000        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-malloc.o)
@@ -1522,11 +1521,11 @@ LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/ccwNITkB.o
+ .boot2         0x10000000      0x100 /tmp/cc9NEiUi.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x6af8
+.text           0x10000100     0x6b30
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1590,571 +1589,572 @@ LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
                 0x100002bc       0x28 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .text.frame_dummy
                 0x100002e4       0x24 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
- .text.read     0x10000308       0x3c CMakeFiles/hw5.dir/hw5.c.obj
-                0x10000308                read
  .text.startup.main
-                0x10000344       0x90 CMakeFiles/hw5.dir/hw5.c.obj
-                0x10000344                main
+                0x10000308       0xc8 CMakeFiles/hw5.dir/hw5.c.obj
+                0x10000308                main
  .text.gpio_set_function
-                0x100003d4       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100003d4                gpio_set_function
+                0x100003d0       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x100003d0                gpio_set_function
  .text.gpio_set_pulls
-                0x10000404       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000404                gpio_set_pulls
+                0x10000400       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000400                gpio_set_pulls
+ .text.gpio_init
+                0x10000424       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000424                gpio_init
  .text.running_on_fpga
-                0x10000428       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
-                0x10000428                running_on_fpga
+                0x10000460       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
+                0x10000460                running_on_fpga
  .text.hw_claim_or_assert
-                0x10000438       0x44 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000438                hw_claim_or_assert
+                0x10000470       0x44 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000470                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x1000047c       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
-                0x1000047c                hw_claim_unused_from_range
+                0x100004b4       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
+                0x100004b4                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x10000518       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000518                spin_locks_reset
+                0x10000550       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000550                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000534       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000534                next_striped_spin_lock_num
+                0x1000056c       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+                0x1000056c                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x1000054c       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
-                0x1000054c                spin_lock_claim_unused
+                0x10000584       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000584                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x10000570       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000570                irq_set_enabled
+                0x100005a8       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x100005a8                irq_set_enabled
  .text.irq_set_pending
-                0x10000594       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000594                irq_set_pending
+                0x100005cc       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x100005cc                irq_set_pending
  .text.irq_has_shared_handler
-                0x100005a4       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005a4                irq_has_shared_handler
+                0x100005dc       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x100005dc                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x100005d0       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005d0                irq_get_vtable_handler
+                0x10000608       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000608                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x100005e0       0x54 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005e0                irq_set_exclusive_handler
+                0x10000618       0x54 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000618                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x10000634      0x1f4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000634                irq_add_shared_handler
+                0x1000066c      0x1f4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000066c                irq_add_shared_handler
  .text.irq_remove_handler
-                0x10000828      0x1c4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000828                irq_remove_handler
+                0x10000860      0x1c4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000860                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x100009ec       0xb4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x100009ec                irq_add_tail_to_free_list
+                0x10000a24       0xb4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000a24                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x10000aa0       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000aa0                irq_init_priorities
+                0x10000ad8       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000ad8                irq_init_priorities
  .text.user_irq_claim_unused
-                0x10000ac4       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000ac4                user_irq_claim_unused
+                0x10000afc       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000afc                user_irq_claim_unused
  .text.lock_init
-                0x10000af0       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
-                0x10000af0                lock_init
+                0x10000b28       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
+                0x10000b28                lock_init
  .text.mutex_init
-                0x10000b00       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
-                0x10000b00                mutex_init
+                0x10000b38       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
+                0x10000b38                mutex_init
  .text.recursive_mutex_init
-                0x10000b1c       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
-                0x10000b1c                recursive_mutex_init
+                0x10000b54       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
+                0x10000b54                recursive_mutex_init
  .text.critical_section_init
-                0x10000b38       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
-                0x10000b38                critical_section_init
+                0x10000b70       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
+                0x10000b70                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x10000b54       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
-                0x10000b54                critical_section_init_with_lock_num
+                0x10000b8c       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
+                0x10000b8c                critical_section_init_with_lock_num
  .text.timer_pool_entry_comparator
-                0x10000b68       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
-                0x10000b68                timer_pool_entry_comparator
+                0x10000ba0       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000ba0                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x10000b9c       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000bd4       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x10000bcc      0x100 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000c04      0x100 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000ccc      0x1c0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000d04      0x1c0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000e8c       0x6c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
-                0x10000e8c                alarm_pool_init_default
+                0x10000ec4       0x6c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000ec4                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x10000ef8        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
-                0x10000ef8                alarm_pool_get_default
+                0x10000f30        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000f30                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x10000f00      0x17c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
-                0x10000f00                alarm_pool_add_alarm_at
+                0x10000f38      0x17c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x10000f38                alarm_pool_add_alarm_at
  .text.alarm_pool_core_num
-                0x1000107c        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
-                0x1000107c                alarm_pool_core_num
+                0x100010b4        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x100010b4                alarm_pool_core_num
  .text.best_effort_wfe_or_timeout
-                0x10001080       0xcc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
-                0x10001080                best_effort_wfe_or_timeout
+                0x100010b8       0xcc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+                0x100010b8                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x1000114c       0xbc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001184       0xbc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001208       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001208                hardware_alarm_claim
+                0x10001240       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001240                hardware_alarm_claim
  .text.time_us_64
-                0x10001220       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001220                time_us_64
+                0x10001258       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001258                time_us_64
  .text.hardware_alarm_set_callback
-                0x10001234       0x8c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001234                hardware_alarm_set_callback
+                0x1000126c       0x8c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000126c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x100012c0       0xd0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
-                0x100012c0                hardware_alarm_set_target
+                0x100012f8       0xd0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x100012f8                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001390       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001390                hardware_alarm_cancel
+                0x100013c8       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x100013c8                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x100013cc       0x58 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+                0x10001404       0x58 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x10001424       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
-                0x10001424                ph_post_alloc_init
+                0x1000145c       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+                0x1000145c                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x10001460       0x8c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
-                0x10001460                ph_merge_two_pass
+                0x10001498       0x8c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+                0x10001498                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x100014ec      0x100 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+                0x10001524      0x100 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x100015ec      0x104 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
-                0x100015ec                ph_remove_head
+                0x10001624      0x104 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+                0x10001624                ph_remove_head
  .text.ph_remove_and_free_node
-                0x100016f0       0x78 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
-                0x100016f0                ph_remove_and_free_node
+                0x10001728       0x78 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+                0x10001728                ph_remove_and_free_node
  .text.clocks_init
-                0x10001768      0x2c8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001768                clocks_init
+                0x100017a0      0x2c8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100017a0                clocks_init
  .text.clock_get_hz
-                0x10001a30        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001a30                clock_get_hz
+                0x10001a68        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001a68                clock_get_hz
  .text.pll_init
-                0x10001a3c       0xa4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001a3c                pll_init
+                0x10001a74       0xa4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001a74                pll_init
  .text.watchdog_start_tick
-                0x10001ae0       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10001ae0                watchdog_start_tick
+                0x10001b18       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001b18                watchdog_start_tick
  .text.watchdog_reboot
-                0x10001af0       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10001af0                watchdog_reboot
+                0x10001b28       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001b28                watchdog_reboot
  .text.xosc_init
-                0x10001b8c       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10001b8c                xosc_init
+                0x10001bc4       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10001bc4                xosc_init
  .text.runtime_init
-                0x10001bb4       0xf0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001bb4                runtime_init
- .text._exit    0x10001ca4        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001ca4                _exit
- .text.exit     0x10001ca8        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001ca8                exit
- .text.panic    0x10001cb0       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001cb0                panic
+                0x10001bec       0xf0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001bec                runtime_init
+ .text._exit    0x10001cdc        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001cdc                _exit
+ .text.exit     0x10001ce0        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001ce0                exit
+ .text.panic    0x10001ce8       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001ce8                panic
  .text.hard_assertion_failure
-                0x10001ce0        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001ce0                hard_assertion_failure
+                0x10001d18        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001d18                hard_assertion_failure
  .text._out_null
-                0x10001cec        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10001d24        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10001cf0       0xac CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10001d28       0xac CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x10001d9c      0x250 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10001dd4      0x250 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x10001fec       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10002024       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x10001ffc       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x1000200c      0x464 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002470      0x3c0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10002034       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x10002044      0x464 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x100024a8      0x3c0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10002830      0xbc8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10002868      0xbc8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x100033f8       0x20 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
-                0x100033f8                vfctprintf
+                0x10003430       0x20 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10003430                vfctprintf
  .text.weak_raw_vprintf
-                0x10003418       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
-                0x10003418                weak_raw_vprintf
- .text          0x10003448       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003450       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10003450                weak_raw_vprintf
+ .text          0x10003480       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10003458       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003458                rom_func_lookup
+                0x10003490       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003490                rom_func_lookup
  .text.rom_data_lookup
-                0x10003468       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003468                rom_data_lookup
+                0x100034a0       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100034a0                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10003478       0x44 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003478                rom_funcs_lookup
+                0x100034b0       0x44 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x100034b0                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x100034bc       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
-                0x100034bc                __wrap___aeabi_idivmod
-                0x100034bc                divmod_s32s32
-                0x100034bc                div_s32s32
-                0x100034bc                __wrap___aeabi_idiv
-                0x100034c4                divmod_s32s32_unsafe
-                0x100034f0                divmod_s32s32_savestate
+                0x100034f4       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+                0x100034f4                __wrap___aeabi_idivmod
+                0x100034f4                divmod_s32s32
+                0x100034f4                div_s32s32
+                0x100034f4                __wrap___aeabi_idiv
+                0x100034fc                divmod_s32s32_unsafe
+                0x10003528                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x1000350c       0x4c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
-                0x1000350c                __wrap___aeabi_uidiv
-                0x1000350c                __wrap___aeabi_uidivmod
-                0x1000350c                div_u32u32
-                0x1000350c                divmod_u32u32
-                0x10003514                divmod_u32u32_unsafe
-                0x1000353c                divmod_u32u32_savestate
+                0x10003544       0x4c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+                0x10003544                __wrap___aeabi_uidiv
+                0x10003544                __wrap___aeabi_uidivmod
+                0x10003544                div_u32u32
+                0x10003544                divmod_u32u32
+                0x1000354c                divmod_u32u32_unsafe
+                0x10003574                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003558      0x424 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
-                0x10003558                div_s64s64
-                0x10003558                divmod_s64s64
-                0x10003558                __wrap___aeabi_ldivmod
-                0x10003588                div_u64u64
-                0x10003588                divmod_u64u64
-                0x10003588                __wrap___aeabi_uldivmod
-                0x10003598                divmod_u64u64_savestate
-                0x100035b8                divmod_s64s64_unsafe
-                0x10003640                divmod_u64u64_unsafe
+                0x10003590      0x424 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+                0x10003590                div_s64s64
+                0x10003590                divmod_s64s64
+                0x10003590                __wrap___aeabi_ldivmod
+                0x100035c0                div_u64u64
+                0x100035c0                divmod_u64u64
+                0x100035c0                __wrap___aeabi_uldivmod
+                0x100035d0                divmod_u64u64_savestate
+                0x100035f0                divmod_s64s64_unsafe
+                0x10003678                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x1000397c       0x80 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000397c                __wrap___aeabi_drsub
-                0x10003982                __wrap___aeabi_dsub
-                0x10003994                __wrap___aeabi_dadd
-                0x100039a6                __wrap___aeabi_ddiv
-                0x100039e2                __wrap___aeabi_dmul
+                0x100039b4       0x80 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100039b4                __wrap___aeabi_drsub
+                0x100039ba                __wrap___aeabi_dsub
+                0x100039cc                __wrap___aeabi_dadd
+                0x100039de                __wrap___aeabi_ddiv
+                0x10003a1a                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x100039fc       0x6c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100039fc                __wrap___aeabi_cdrcmple
-                0x10003a0c                __wrap___aeabi_cdcmple
-                0x10003a0c                __wrap___aeabi_cdcmpeq
+                0x10003a34       0x6c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003a34                __wrap___aeabi_cdrcmple
+                0x10003a44                __wrap___aeabi_cdcmple
+                0x10003a44                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x10003a68        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003a68                __wrap___aeabi_dcmplt
+                0x10003aa0        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003aa0                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmpge
-                0x10003a74       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003a74                __wrap___aeabi_dcmpge
+                0x10003aac       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003aac                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003a84        0xa CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003a84                __wrap___aeabi_dcmpgt
+                0x10003abc        0xa CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003abc                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003a8e       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003a8e                __wrap___aeabi_dcmpun
- *fill*         0x10003aaa        0x2 
+                0x10003ac6       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ac6                __wrap___aeabi_dcmpun
+ *fill*         0x10003ae2        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003aac       0x38 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003aac                __wrap___aeabi_ui2d
-                0x10003ab4                __wrap___aeabi_i2d
+                0x10003ae4       0x38 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003ae4                __wrap___aeabi_ui2d
+                0x10003aec                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003ae4       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003ae4                __wrap___aeabi_d2iz
-                0x10003ae4                double2int_z
+                0x10003b1c       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003b1c                __wrap___aeabi_d2iz
+                0x10003b1c                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x10003b2c       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003b2c                double2uint
-                0x10003b2c                __wrap___aeabi_d2uiz
+                0x10003b64       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003b64                double2uint
+                0x10003b64                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x10003b44       0x98 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10003b44                __aeabi_double_init
+                0x10003b7c       0x98 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003b7c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10003bdc       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003bdc                double_table_shim_on_use_helper
+                0x10003c14       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003c14                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10003c08       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003c08                drsub_shim
-                0x10003c0e                dsub_shim
+                0x10003c40       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003c40                drsub_shim
+                0x10003c46                dsub_shim
  .text.dadd_shim
-                0x10003c18      0x15c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003c18                dadd_shim
+                0x10003c50      0x15c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003c50                dadd_shim
  .text.dmul_shim
-                0x10003d74      0x15c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003d74                dmul_shim
+                0x10003dac      0x15c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003dac                dmul_shim
  .text.ddiv_shim
-                0x10003ed0      0x1b0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003ed0                ddiv_shim
+                0x10003f08      0x1b0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003f08                ddiv_shim
  .text.double2uint_shim
-                0x10004080        0xe CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004080                double2uint_shim
-                0x10004082                double2ufix_shim
- *fill*         0x1000408e        0x2 
+                0x100040b8        0xe CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100040b8                double2uint_shim
+                0x100040ba                double2ufix_shim
+ *fill*         0x100040c6        0x2 
  .text.double2uint64_shim
-                0x10004090       0x70 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004090                double2uint64_shim
-                0x10004092                double2ufix64_shim
-                0x100040b2                d2fix_a
+                0x100040c8       0x70 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100040c8                double2uint64_shim
+                0x100040ca                double2ufix64_shim
+                0x100040ea                d2fix_a
  .text.dunpacks
-                0x10004100       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004100                dunpacks
+                0x10004138       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004138                dunpacks
  .text.__aeabi_lmul
-                0x1000413c       0x32 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x1000413c                __wrap___aeabi_lmul
- *fill*         0x1000416e        0x2 
+                0x10004174       0x32 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x10004174                __wrap___aeabi_lmul
+ *fill*         0x100041a6        0x2 
  .text.__aeabi_float_init
-                0x10004170       0x64 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10004170                __aeabi_float_init
+                0x100041a8       0x64 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x100041a8                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x100041d4       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x100041d4                float_table_shim_on_use_helper
- .text          0x10004200       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004200                __aeabi_mem_init
- .text.memset   0x10004210        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004210                __wrap_memset
- .text.memcpy   0x1000421c        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x1000421c                __wrap___aeabi_memcpy
-                0x1000421c                __wrap_memcpy
+                0x1000420c       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x1000420c                float_table_shim_on_use_helper
+ .text          0x10004238       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004238                __aeabi_mem_init
+ .text.memset   0x10004248        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004248                __wrap_memset
+ .text.memcpy   0x10004254        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10004254                __wrap___aeabi_memcpy
+                0x10004254                __wrap_memcpy
  .text.stdio_out_chars_crlf
-                0x10004228       0x94 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004260       0x94 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x100042bc       0x64 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100042f4       0x64 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x10004320       0x98 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004320                __wrap_putchar
+                0x10004358       0x98 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004358                __wrap_putchar
  .text.__wrap_puts
-                0x100043b8       0xe0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100043b8                __wrap_puts
+                0x100043f0       0xe0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100043f0                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x10004498       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004498                stdio_set_driver_enabled
+                0x100044d0       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100044d0                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x100044c8       0xd4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100044c8                __wrap_vprintf
+                0x10004500       0xd4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004500                __wrap_vprintf
  .text.__wrap_printf
-                0x1000459c       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
-                0x1000459c                __wrap_printf
+                0x100045d4       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100045d4                __wrap_printf
  .text.stdio_init_all
-                0x100045b4        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100045b4                stdio_init_all
+                0x100045ec        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100045ec                stdio_init_all
  .text.resetd_init
-                0x100045bc        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .text.resetd_reset
-                0x100045c0        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .text.resetd_open
-                0x100045cc       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .text.resetd_xfer_cb
                 0x100045f4        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .text.resetd_reset
+                0x100045f8        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .text.resetd_open
+                0x10004604       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .text.resetd_xfer_cb
+                0x1000462c        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x100045f8       0x60 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004630       0x60 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x10004658        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x10004658                usbd_app_driver_get_cb
+                0x10004690        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10004690                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x10004664       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x10004664                tud_cdc_line_coding_cb
+                0x1000469c       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x1000469c                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x10004698       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004698                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x100046ac       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100046d0       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100046d0                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x100046e4       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x100046bc       0x54 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100046f4       0x54 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x10004710       0x90 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10004710                stdio_usb_in_chars
+                0x10004748       0x90 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004748                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x100047a0      0x104 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100047d8      0x104 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x100048a4       0xa8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100048dc       0xa8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x1000494c       0x20 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x1000494c                tud_cdc_rx_cb
+                0x10004984       0x20 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10004984                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x1000496c       0xe0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x1000496c                stdio_usb_init
+                0x100049a4       0xe0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x100049a4                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x10004a4c        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x10004a4c                tud_descriptor_device_cb
+                0x10004a84        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004a84                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x10004a54        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x10004a54                tud_descriptor_configuration_cb
+                0x10004a8c        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004a8c                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x10004a5c       0x78 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x10004a5c                tud_descriptor_string_cb
+                0x10004a94       0x78 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10004a94                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x10004ad4       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x10004b0c       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x10004ae4      0x1a8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x10004ae4                pico_get_unique_board_id_string
+                0x10004b1c      0x1a8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x10004b1c                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x10004c8c       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
-                0x10004c8c                flash_get_unique_id
+                0x10004cc4       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
+                0x10004cc4                flash_get_unique_id
  .text.dcd_int_enable
-                0x10004cc8        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004cc8                dcd_int_enable
+                0x10004d00        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d00                dcd_int_enable
  .text.dcd_set_address
-                0x10004cd4       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004cd4                dcd_set_address
+                0x10004d0c       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d0c                dcd_set_address
  .text.dcd_connect
-                0x10004ce8       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004ce8                dcd_connect
+                0x10004d20       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d20                dcd_connect
  .text.dcd_init
-                0x10004cf8       0x98 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004cf8                dcd_init
+                0x10004d30       0x98 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004d30                dcd_init
  .text.dcd_edpt0_status_complete
-                0x10004d90       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004d90                dcd_edpt0_status_complete
+                0x10004dc8       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004dc8                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x10004dac      0x108 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004dac                dcd_edpt_open
+                0x10004de4      0x108 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004de4                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x10004eb4        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004eb4                dcd_edpt_close_all
+                0x10004eec        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004eec                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x10004ebc       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004ebc                dcd_edpt_xfer
+                0x10004ef4       0x24 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004ef4                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x10004ee0       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004ee0                dcd_edpt_stall
+                0x10004f18       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004f18                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x10004f14       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x10004f14                dcd_edpt_clear_stall
+                0x10004f4c       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x10004f4c                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x10004f44       0x4c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x10004f44                rp2040_usb_init
+                0x10004f7c       0x4c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10004f7c                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x10004f90       0x40 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x10004f90                hw_endpoint_xfer_start
+                0x10004fc8       0x40 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10004fc8                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x10004fd0       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10004fd0                tud_mounted
+                0x10005008       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005008                tud_mounted
  .text.tud_suspended
-                0x10004fe0       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10004fe0                tud_suspended
+                0x10005018       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005018                tud_suspended
  .text.tud_inited
-                0x10004ff0       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10004ff0                tud_inited
+                0x10005028       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005028                tud_inited
  .text.tud_init
-                0x10005004       0xdc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10005004                tud_init
+                0x1000503c       0xdc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x1000503c                tud_init
  .text.tud_task_ext
-                0x100050e0      0x850 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x100050e0                tud_task_ext
+                0x10005118      0x850 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005118                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x10005930       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10005930                usbd_open_edpt_pair
+                0x10005968       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005968                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x100059cc       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x100059cc                usbd_defer_func
+                0x10005a04       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005a04                usbd_defer_func
  .text.usbd_edpt_open
-                0x10005a14       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10005a14                usbd_edpt_open
+                0x10005a4c       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005a4c                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x10005a48       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10005a48                usbd_edpt_claim
+                0x10005a80       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005a80                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x10005a70       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10005a70                usbd_edpt_release
+                0x10005aa8       0x28 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005aa8                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x10005a98       0x4c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x10005a98                usbd_edpt_xfer
+                0x10005ad0       0x4c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10005ad0                usbd_edpt_xfer
  .text.tud_control_status
-                0x10005ae4       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005ae4                tud_control_status
+                0x10005b1c       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005b1c                tud_control_status
  .text.tud_control_xfer
-                0x10005b10       0xac CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005b10                tud_control_xfer
+                0x10005b48       0xac CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005b48                tud_control_xfer
  .text.usbd_control_reset
-                0x10005bbc       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005bbc                usbd_control_reset
+                0x10005bf4       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005bf4                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x10005bd0        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005bd0                usbd_control_set_complete_callback
+                0x10005c08        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005c08                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x10005bdc       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005bdc                usbd_control_set_request
+                0x10005c14       0x1c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005c14                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x10005bf8       0xf4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
-                0x10005bf8                usbd_control_xfer_cb
+                0x10005c30       0xf4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+                0x10005c30                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x10005cec       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005cec                tud_cdc_n_connected
+                0x10005d24       0x30 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005d24                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x10005d1c       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005d1c                tud_cdc_n_available
+                0x10005d54       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005d54                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x10005d34       0x70 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005d34                tud_cdc_n_read
+                0x10005d6c       0x70 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005d6c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x10005da4       0x78 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005da4                tud_cdc_n_write_flush
+                0x10005ddc       0x78 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005ddc                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x10005e1c       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005e1c                tud_cdc_n_write
+                0x10005e54       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005e54                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x10005e50       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005e50                tud_cdc_n_write_available
+                0x10005e88       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005e88                tud_cdc_n_write_available
  .text.cdcd_init
-                0x10005e68       0x7c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005e68                cdcd_init
+                0x10005ea0       0x7c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005ea0                cdcd_init
  .text.cdcd_reset
-                0x10005ee4       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005ee4                cdcd_reset
+                0x10005f1c       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005f1c                cdcd_reset
  .text.cdcd_open
-                0x10005f10       0xe4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005f10                cdcd_open
+                0x10005f48       0xe4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10005f48                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x10005ff4       0xe4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x10005ff4                cdcd_control_xfer_cb
+                0x1000602c       0xe4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x1000602c                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x100060d8      0x13c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x100060d8                cdcd_xfer_cb
+                0x10006110      0x13c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x10006110                cdcd_xfer_cb
  .text.tusb_init
-                0x10006214        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
-                0x10006214                tusb_init
+                0x1000624c        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+                0x1000624c                tusb_init
  .text.tusb_inited
-                0x10006220        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
-                0x10006220                tusb_inited
+                0x10006258        0x8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+                0x10006258                tusb_inited
  .text.tu_edpt_claim
-                0x10006228       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
-                0x10006228                tu_edpt_claim
+                0x10006260       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+                0x10006260                tu_edpt_claim
  .text.tu_edpt_release
-                0x10006278       0x38 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
-                0x10006278                tu_edpt_release
+                0x100062b0       0x38 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+                0x100062b0                tu_edpt_release
  .text.tu_edpt_validate
-                0x100062b0       0x7c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
-                0x100062b0                tu_edpt_validate
+                0x100062e8       0x7c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+                0x100062e8                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x1000632c       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
-                0x1000632c                tu_edpt_bind_driver
+                0x10006364       0x34 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+                0x10006364                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x10006360       0x6c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006360                tu_fifo_config
+                0x10006398       0x6c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006398                tu_fifo_config
  .text.tu_fifo_count
-                0x100063cc       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100063cc                tu_fifo_count
+                0x10006404       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006404                tu_fifo_count
  .text.tu_fifo_empty
-                0x100063f8       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100063f8                tu_fifo_empty
+                0x10006430       0x10 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006430                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x10006408       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006408                tu_fifo_remaining
+                0x10006440       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006440                tu_fifo_remaining
  .text.tu_fifo_read
-                0x10006434       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006434                tu_fifo_read
+                0x1000646c       0x9c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x1000646c                tu_fifo_read
  .text.tu_fifo_read_n
-                0x100064d0       0xe8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100064d0                tu_fifo_read_n
+                0x10006508       0xe8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006508                tu_fifo_read_n
  .text.tu_fifo_write
-                0x100065b8       0xa8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100065b8                tu_fifo_write
+                0x100065f0       0xa8 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100065f0                tu_fifo_write
  .text.tu_fifo_write_n
-                0x10006660      0x178 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006660                tu_fifo_write_n
+                0x10006698      0x178 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006698                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x100067d8       0x40 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100067d8                tu_fifo_clear
+                0x10006810       0x40 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006810                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x10006818       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10006818                tu_fifo_set_overwritable
+                0x10006850       0x48 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10006850                tu_fifo_set_overwritable
  .text.i2c_set_baudrate
-                0x10006860       0xc4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006860                i2c_set_baudrate
+                0x10006898       0xc4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x10006898                i2c_set_baudrate
  .text.i2c_init
-                0x10006924       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006924                i2c_init
+                0x1000695c       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x1000695c                i2c_init
  .text.i2c_write_blocking
-                0x10006974       0xd0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006974                i2c_write_blocking
+                0x100069ac       0xd0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x100069ac                i2c_write_blocking
  .text.i2c_read_blocking
-                0x10006a44       0x90 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x10006a44                i2c_read_blocking
- .text.strlen   0x10006ad4       0x5c /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-strlen-stub.o)
-                0x10006ad4                strlen
+                0x10006a7c       0x90 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x10006a7c                i2c_read_blocking
+ .text.strlen   0x10006b0c       0x5c /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-strlen-stub.o)
+                0x10006b0c                strlen
  *(.fini)
- .fini          0x10006b30        0x4 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crti.o
-                0x10006b30                _fini
- *fill*         0x10006b34        0x4 
- .fini.__stub   0x10006b38       0xc0 linker stubs
+ .fini          0x10006b68        0x4 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crti.o
+                0x10006b68                _fini
+ *fill*         0x10006b6c        0x4 
+ .fini.__stub   0x10006b70       0xc0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2166,122 +2166,122 @@ LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10006bf8        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10006bf8                        . = ALIGN (0x4)
+ .eh_frame      0x10006c30        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10006c30                        . = ALIGN (0x4)
 
-.glue_7         0x10006bf8        0x0
- .glue_7        0x10006bf8        0x0 linker stubs
+.glue_7         0x10006c30        0x0
+ .glue_7        0x10006c30        0x0 linker stubs
 
-.glue_7t        0x10006bf8        0x0
- .glue_7t       0x10006bf8        0x0 linker stubs
+.glue_7t        0x10006c30        0x0
+ .glue_7t       0x10006c30        0x0 linker stubs
 
-.vfp11_veneer   0x10006bf8        0x0
- .vfp11_veneer  0x10006bf8        0x0 linker stubs
+.vfp11_veneer   0x10006c30        0x0
+ .vfp11_veneer  0x10006c30        0x0 linker stubs
 
-.v4_bx          0x10006bf8        0x0
- .v4_bx         0x10006bf8        0x0 linker stubs
+.v4_bx          0x10006c30        0x0
+ .v4_bx         0x10006c30        0x0 linker stubs
 
-.iplt           0x10006bf8        0x0
- .iplt          0x10006bf8        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10006c30        0x0
+ .iplt          0x10006c30        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10006bf8      0x4e4
+.rodata         0x10006c30      0x4e4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x10006bf8      0x17b CMakeFiles/hw5.dir/hw5.c.obj
-                                  0x3 (size before relaxing)
+                0x10006c30      0x17b CMakeFiles/hw5.dir/hw5.c.obj
+                                  0x4 (size before relaxing)
  .rodata.spin_lock_claim_unused.str1.4
-                0x10006d73       0x1b CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+                0x10006dab       0x1b CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.user_irq_claim_unused.str1.4
-                0x10006d73       0x1b CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+                0x10006dab       0x1b CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.hardware_alarm_claim.str1.4
-                0x10006d73       0x22 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+                0x10006dab       0x22 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.panic.str1.4
-                0x10006d73       0x12 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10006dab       0x12 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.hard_assertion_failure.str1.4
-                0x10006d73        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10006dab        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x10006d73       0x15 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10006d73        0x1 
+                0x10006dab       0x15 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10006dab        0x1 
  .rodata._vsnprintf
-                0x10006d74      0x19c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10006dac      0x19c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x10006f10       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+                0x10006f48       0x50 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x10006f60       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006f98       0x3c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10006f60        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006f98        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10006f6c        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006fa4        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_56
-                0x10006f78        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006fb0        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10006f84        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10006fbc        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x10006f90        0x2 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10006f92        0x2 
+                0x10006fc8        0x2 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10006fca        0x2 
  .rodata._resetd_driver
-                0x10006f94       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x10006fcc       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x10006fac       0x13 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10006fe4       0x13 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.__bi_182.0
-                0x10006fac        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10006fe4        0xc CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x10006fb8       0x2a CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10006ff0       0x2a CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_str
-                0x10006fb8       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10006ff0       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_cfg
-                0x10006fd0       0x54 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x10007008       0x54 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x10007024       0x12 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x1000705c       0x12 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.str1.4
-                0x10007036       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x1000706e       0x14 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x10007036       0x53 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x10007036        0x2 
+                0x1000706e       0x53 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x1000706e        0x2 
  .rodata.tud_task_ext
-                0x10007038       0x8c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10007070       0x8c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x100070c4       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
-                0x100070dc                        . = ALIGN (0x4)
+                0x100070fc       0x18 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+                0x10007114                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x100070dc                        . = ALIGN (0x4)
+                0x10007114                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x100070dc                        __exidx_start = .
+                0x10007114                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x100070dc                        __exidx_end = .
-                0x100070dc                        . = ALIGN (0x4)
-                0x100070dc                        __binary_info_start = .
+                0x10007114                        __exidx_end = .
+                0x10007114                        . = ALIGN (0x4)
+                0x10007114                        __binary_info_start = .
 
-.binary_info    0x100070dc       0x24
+.binary_info    0x10007114       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr81
-                0x100070dc        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007114        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x100070e0        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007118        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr56
-                0x100070e4        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000711c        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x100070e8        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007120        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x100070ec        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007124        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x100070f0        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007128        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x100070f4        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000712c        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr22
-                0x100070f8        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10007130        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr182
-                0x100070fc        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x10007100                        __binary_info_end = .
+                0x10007134        0x4 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x10007138                        __binary_info_end = .
 
-.rel.dyn        0x10007100        0x0
- .rel.iplt      0x10007100        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10007100                        . = ALIGN (0x4)
+.rel.dyn        0x10007138        0x0
+ .rel.iplt      0x10007138        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10007138                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2290,7 +2290,7 @@ LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
                 0x20000000       0xc0 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0xe28 load address 0x10007100
+.data           0x200000c0      0xe28 load address 0x10007138
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2426,36 +2426,36 @@ LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
  *(.jcr)
                 0x20000ee8                        . = ALIGN (0x4)
                 0x20000ee8                        __data_end__ = .
-                0x10007100                        __etext = LOADADDR (.data)
+                0x10007138                        __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x20000ee8        0x0 load address 0x10007f28
+                0x20000ee8        0x0 load address 0x10007f60
  .tm_clone_table
                 0x20000ee8        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000ee8        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000ee8        0x0 load address 0x10007f28
+.igot.plt       0x20000ee8        0x0 load address 0x10007f60
  .igot.plt      0x20000ee8        0x0 /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x20000ee8        0x0 load address 0x10007f28
+                0x20000ee8        0x0 load address 0x10007f60
                 0x20000ee8                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x10007f28
+.scratch_x      0x20040000        0x0 load address 0x10007f60
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10007f28                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10007f60                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10007f28
+.scratch_y      0x20041000        0x0 load address 0x10007f60
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10007f28                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10007f60                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000ee8      0xd84
                 0x20000ee8                        . = ALIGN (0x4)
@@ -2572,8 +2572,8 @@ LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x10007f28        0x0
-                0x10007f28                        PROVIDE (__flash_binary_end = .)
+.flash_end      0x10007f60        0x0
+                0x10007f60                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2652,7 +2652,7 @@ LOAD CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.ob
 LOAD CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
-LOAD /tmp/ccwNITkB.o
+LOAD /tmp/cc9NEiUi.o
 LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2768,7 +2768,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007a2       0x2c CMakeFiles/hw5.dir/home/milan/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_i2c/i2c.c.obj
  .ARM.attributes
-                0x000007ce       0x22 /tmp/ccwNITkB.o
+                0x000007ce       0x22 /tmp/cc9NEiUi.o
  .ARM.attributes
                 0x000007f0       0x1e /home/milan/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
