@@ -31,21 +31,24 @@ if (PICO_SDK_VERSION_STRING VERSION_LESS "1.4.0")
   message(FATAL_ERROR "Raspberry Pi Pico SDK version 1.4.0 (or later) required. Your version is ${PICO_SDK_VERSION_STRING}")
 endif()
 
-project(hw6 C CXX ASM)
+project(hw7 C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(hw6
-        hw6.c
-        )
+add_executable(hw7
+  hw7.c
+  ssd1306.c
+  )
 
-# pull in common dependencies and additional uart hardware support
-target_link_libraries(hw6 pico_stdlib hardware_uart)
+# pull in common dependencies
+target_link_libraries(hw7 pico_stdlib hardware_i2c hardware_uart hardware_irq hardware_adc)
+
+pico_enable_stdio_usb(hw7 1) 
+pico_enable_stdio_uart(hw7 0)
+
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(hw6)
-
-# add url via pico_set_program_url
+pico_add_extra_outputs(hw7)

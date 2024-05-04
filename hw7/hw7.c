@@ -1,46 +1,52 @@
-/**
- * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
- *
- * SPDX-License-Identifier: BSD-3-Clause
- */
-
-
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
 #include "pico/stdlib.h"
-#include "hardware/uart.h"
-#include "hardware/irq.h"
+#include "pico/binary_info.h"
+#include "hardware/i2c.h"
+#include "ssd1306.h"
+// #include "uart.h"
 
+#define LED_PIN 25
 
-/// \tag::uart_advanced[]
+// static int chars_rxed = 0;
 
-#define UART_ID uart0
-#define BAUD_RATE 115200
-#define DATA_BITS 8
-#define STOP_BITS 1
-#define PARITY    UART_PARITY_NONE
+// // RX interrupt handler
 
-// We are using pins 0 and 1, but see the GPIO function select table in the
-// datasheet for information on which other pins can be used.
-#define UART_TX_PIN 0
-#define UART_RX_PIN 1
+// volatile int i = 0;
+// char m[100];
 
-static int chars_rxed = 0;
-
-// RX interrupt handler
-void on_uart_rx() {
-    while (uart_is_readable(UART_ID)) {
-        uint8_t ch = uart_getc(UART_ID);
-        // Can we send it back?
-        if (uart_is_writable(UART_ID)) {
-            // Change it slightly first!
-            ch++;
-            uart_putc(UART_ID, ch);
-        }
-        chars_rxed++;
-    }
-}
+// void on_uart_rx() {
+//     while (uart_is_readable(UART_ID)) {
+//         uint8_t ch = uart_getc(UART_ID);
+//         if (ch == '\r' || ch == '\n') {
+//             ssd1306_clear();
+//             drawMessage(10, 10, m);
+//             i = 0;
+//         } 
+//         else {
+//             m[i] = ch;
+//             i++;
+//         }
+//     }
+// }
 
 int main() {
-    // Set up our UART with a basic baud rate.
+    stdio_init_all();
+
+    // initialize I2C communication
+    i2c_init(i2c_default, 100 * 1000);
+    gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
+
+    ssd1306_setup(); // initialize display
+
+    // initialize onboard LED pin
+    gpio_init(LED_PIN); 
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_put(LED_PIN, 1);
+
+    // UART SETUP
     uart_init(UART_ID, 2400);
 
     // Set the TX and RX pins by using the function select on the GPIO
@@ -74,13 +80,16 @@ int main() {
     // Now enable the UART to send interrupts - RX only
     uart_set_irq_enables(UART_ID, true, false);
 
-    // OK, all set up.
-    // Lets send a basic string out, and then run a loop and wait for RX interrupts
-    // The handler will count them, but also reflect the incoming data back with a slight change!
-    uart_puts(UART_ID, "\nHello, uart interrupts\n");
+    uart_puts(UART_ID, "Starting communication\r\n");
 
-    while (1)
-        tight_loop_contents();
+
+    while (1) {
+        // do nothing
+        uart_puts(UART_ID, "Starting communication\r\n");
+        gpio_put(LED_PIN, 1);
+        sleep_ms(250);
+        gpio_put(LED_PIN, 0);
+        sleep_ms(250);
+
+    }
 }
-
-/// \end:uart_advanced[]
